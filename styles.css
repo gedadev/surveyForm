@@ -1,0 +1,81 @@
+* {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+#title {
+    font-size: 32px;
+    margin: 30px 0 0 0;
+}
+
+#description {
+    font-size: 15px;
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(138, 138, 255);
+}
+
+@media (max-width: 1000px) {
+    #survey-form {
+        width: 80%;
+        padding: 40px;
+        background-color: rgba(25, 0, 116, 0.527);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 3px;
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    #survey-form {
+        max-width: 650px;
+        width: 650px;
+        padding: 40px;
+        background-color: rgba(25, 0, 116, 0.527);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 3px;
+        margin: 10px 0 10px 0;
+    }
+}
+
+.form-element {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+#name, #email, #number, #dropdown, textarea {
+    border-radius: 5px;
+    padding: 6px 12px !important;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    background:#f1f1f1;
+    border:1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#submit {
+    background-color: chocolate;
+    border-style: none;
+    border-radius: 3px;
+    height: 50px;
+}
+
+.form-element > * {
+    padding: 0 0 10px 0;
+}
